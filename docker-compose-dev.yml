@@ -3,7 +3,7 @@ version: "3"
 services:
 
   manual:
-    image: ${REGISTRY_URL}/sphinx-manual
+    build: server
     volumes:
     - ${DOC_SOURCE}:/opt/sphinx/doc/:ro
     - ${DOC_OUTPUT}:/usr/share/nginx/html
