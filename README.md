@@ -17,6 +17,18 @@ If they are missing, follow the instructions on the official website (they are n
 - [Docker CE Install How-to](https://docs.docker.com/engine/installation/)
 - [Docker Compose Install How-to](https://docs.docker.com/compose/install/)
 
+---
+
+## Download Me!
+
+Take this source from git repository with the following commands:
+
+    $ git clone https://github.com/sangahco/sphinx-manual.git
+    $ cd sphinx-manual
+    $ git submodule init
+    $ git submodule update
+
+---
 
 ## How to Use
 
@@ -25,7 +37,8 @@ will be accessible going to `http://localhost:80`
 
     $ docker-compose up
 
-In case the server is using an HUB service set the `HUB_INSTANCE` variable 
+In case the server is using the [HUB](https://github.com/sangahco/docker-webapp-hub) 
+service set the `HUB_INSTANCE` variable 
 and use the hub configuration like below:
 
     $ HUB_INSTANCE=manual docker-compose -f docker-compose-with-hub.yml up
@@ -37,5 +50,6 @@ You can set the `HUB_INSTANCE` inside the `.env` file too.
 
     $ ./docker-auto.sh --help
 
+---
 
 ## Settings Up the Environment
