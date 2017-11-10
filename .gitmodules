@@ -1,0 +1,4 @@
+[submodule "devnote-doc"]
+	path = doc
+	url = https://github.com/sangahco/devnote-doc.git
+	branch = master
