@@ -5,7 +5,8 @@ services:
   manual:
     image: ${REGISTRY_URL}/sphinx-manual
     volumes:
-    - ${SPHINX_DOC}:/opt/sphinx/doc/
+    - ${DOC_SOURCE}:/opt/sphinx/doc/:ro
+    - ${DOC_OUTPUT}:/usr/share/nginx/html/
     networks:
       default:
       hub_net:
