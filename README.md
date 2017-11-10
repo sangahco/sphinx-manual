@@ -25,6 +25,7 @@ Take this source from git repository with the following commands:
 
     $ git clone https://github.com/sangahco/sphinx-manual.git
     $ cd sphinx-manual
+    $ git checkout -b devnote --track origin/devnote
     $ git submodule init
     $ git submodule update
 
