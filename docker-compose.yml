@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  manual:
+    image: ${REGISTRY_URL}/sphinx-manual
+    volumes:
+    - ${SPHINX_DOC}:/opt/sphinx/doc/
+    logging: 
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    ports:
+    - ${HTTP_PORT}:80

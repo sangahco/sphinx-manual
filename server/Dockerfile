@@ -1,0 +1,19 @@
+FROM dev.sangah.com:5043/nginx-base
+
+RUN set -e && \
+    apk add --update \
+        python \
+        py-pip && \
+    pip install virtualenv && \
+    rm -rf /var/cache/apk/*
+
+RUN set -e && \
+    # installing sphinx
+    virtualenv /opt/sphinx && \
+    . /opt/sphinx/bin/activate && \
+    pip install sphinx && \
+    deactivate
+
+COPY ./init_manual.sh ./init_manual.sh
+RUN chmod +x /init_manual.sh
+ENTRYPOINT ["/init_manual.sh"]
