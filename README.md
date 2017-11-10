@@ -37,7 +37,8 @@ will be accessible going to `http://localhost:80`
 
     $ docker-compose up
 
-In case the server is using an HUB service set the `HUB_INSTANCE` variable 
+In case the server is using the [HUB](https://github.com/sangahco/docker-webapp-hub) 
+service set the `HUB_INSTANCE` variable 
 and use the hub configuration like below:
 
     $ HUB_INSTANCE=manual docker-compose -f docker-compose-with-hub.yml up
