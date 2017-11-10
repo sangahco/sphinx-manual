@@ -17,6 +17,18 @@ If they are missing, follow the instructions on the official website (they are n
 - [Docker CE Install How-to](https://docs.docker.com/engine/installation/)
 - [Docker Compose Install How-to](https://docs.docker.com/compose/install/)
 
+---
+
+## Download Me!
+
+Take this source from git repository with the following commands:
+
+    $ git clone https://github.com/sangahco/sphinx-manual.git
+    $ cd sphinx-manual
+    $ git submodule init
+    $ git submodule update
+
+---
 
 ## How to Use
 
@@ -37,5 +49,6 @@ You can set the `HUB_INSTANCE` inside the `.env` file too.
 
     $ ./docker-auto.sh --help
 
+---
 
 ## Settings Up the Environment
