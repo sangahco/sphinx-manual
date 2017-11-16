@@ -32,6 +32,12 @@ Take this source from git repository with the following commands:
 
 ## How to Use
 
+**Use the script `docker-auto.sh` to manage these services!**
+
+    $ ./docker-auto.sh --help
+
+You can use docker-compose also see belows.
+
 Start the container with the following command and after the build the documentation 
 will be accessible going to `http://localhost:80`
 
@@ -46,9 +52,6 @@ and use the hub configuration like below:
 You can set the `HUB_INSTANCE` inside the `.env` file too.
 
 
-**Use the script `docker-auto.sh` to manage these services!**
-
-    $ ./docker-auto.sh --help
 
 ---
 
