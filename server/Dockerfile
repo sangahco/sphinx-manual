@@ -12,7 +12,10 @@ RUN set -e && \
     virtualenv /opt/sphinx && \
     . /opt/sphinx/bin/activate && \
     pip install sphinx && \
-    deactivate
+    deactivate && \
+    mkdir -p /opt/sphinx/doc
+
+ENV PATH $PATH:/opt/sphinx/bin
 
 COPY ./init_manual.sh ./init_manual.sh
 RUN chmod +x /init_manual.sh
