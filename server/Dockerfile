@@ -2,7 +2,7 @@ FROM dev.sangah.com:5043/nginx-base
 
 RUN set -e && \
     apk add --update \
-        python \
+        python3 \
         py-pip && \
     pip install virtualenv && \
     rm -rf /var/cache/apk/*
