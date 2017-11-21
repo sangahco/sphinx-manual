@@ -55,9 +55,7 @@ You can set the `HUB_INSTANCE` inside the `.env` file too.
 
 Is possible to create a brand new documentation with the following command:
 
-    $ docker run -v $PWD/doc:/opt/sphinx/doc -it --rm sphinx \
-    sphinx-quickstart -q --project=Demo --author='Disco Emanuele' /opt/sphinx/doc
-
+    $ ./docker-auto.sh run manual sphinx-quickstart -q --project=Demo --author='Disco Emanuele' /opt/sphinx/doc
 
 
 ---
