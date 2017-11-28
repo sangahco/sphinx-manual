@@ -59,4 +59,34 @@ Is possible to create a brand new documentation with the following command:
 
 ---
 
-## Settings Up the Environment
+## Setup New Manual
+
+Create a new folder for the new manual and from that folder we create a new git repository:
+
+    $ git init
+
+Than we add this repository as upstream to the new repository:
+
+    $ git remote add upstream https://github.com/sangahco/sphinx-manual.git
+    $ git fetch upstream
+
+Than we bring the initial files into the new folder:
+
+    $ git merge upstream/template
+
+
+Create a new repository on GitHub and set the new repository as origin into our folder:
+
+    $ git remote add origin <new repo url here>
+
+Push the new commits to GitHub:
+
+    $ git push origin master
+
+With Docker installed we can test the new manual:
+
+    $ ./docker-auto.sh up
+
+Go to http://localhost and you should see the main page.
+
+Congratulations now we have a new manual!
