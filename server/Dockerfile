@@ -1,4 +1,4 @@
-FROM dev.sangah.com:5043/nginx-base
+FROM sangah/nginx-base
 
 RUN set -e && \
     apk add --update \
