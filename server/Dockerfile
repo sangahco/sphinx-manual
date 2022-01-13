@@ -12,6 +12,7 @@ RUN set -e && \
     virtualenv /opt/sphinx && \
     . /opt/sphinx/bin/activate && \
     pip install sphinx && \
+    pip install sphinx_rtd_theme && \
     deactivate && \
     mkdir -p /opt/sphinx/doc
 
